@@ -1,0 +1,11 @@
+{
+  "name": "travels",
+  "version": "1.0.0",
+  "description": "Travels by A.Rozanski",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Armand Rozanski",
+  "license": "ISC"
+}
