@@ -1,0 +1,17 @@
+/* GLOBAL RESETS */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; //force property inheritance
+}
+
+html {
+  font-size: 62.5%; // definition of 1rem
+}
+
+body {
+  box-sizing: border-box;
+}
