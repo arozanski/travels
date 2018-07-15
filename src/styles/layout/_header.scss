@@ -4,6 +4,7 @@
                     url('images/thailand-4.jpg');
   background-size: cover;
   background-position: bottom;
+  -webkit-clip-path: polygon(0 0, 70% 0, 100% 20vh, 100% 100%, 30% 100%, 0% 80vh);
   clip-path: polygon(0 0, 70% 0, 100% 20vh, 100% 100%, 30% 100%, 0% 80vh);
   position: relative;
 
