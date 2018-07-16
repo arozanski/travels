@@ -38,6 +38,10 @@
     height: 100%;
     transition: all .5s;
     transform: translateX(-4rem) scale(1.4);
+
+    @include mqm(phone) {
+      transform: translateX(0) scale(1);
+    }
   }
 
   &__text {
@@ -68,5 +72,9 @@
   &:hover &__image {
     transform: translateX(-4rem) scale(1);
     filter: blur(3px) brightness(80%);
+
+    @include mqm(phone) {
+      transform: translateX(0) scale(1);
+    }
   }
 }

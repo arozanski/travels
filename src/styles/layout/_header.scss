@@ -11,6 +11,7 @@
   @include mqm(phone) {
     -webkit-clip-path: none;
     clip-path: none;
+    height: 80rem;
   }
 
   &__logo-container {
