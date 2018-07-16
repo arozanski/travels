@@ -38,6 +38,15 @@
   &__left {
     width: 33.333333%;
     display: table-cell;
+
+    @include mqm(tabletP) {
+      width: 35%;
+    }
+
+    @include mqm(phone) {
+      width: 100%;
+      float: left;
+    }
   }
 
   &__right {
@@ -45,11 +54,25 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+
+    @include mqm(tabletP) {
+      width: 65%;
+    }
+
+    @include mqm(phone) {
+      width: 100%;
+      float: left;
+    }
   }
 
   &__image {
     display: block;
     width: 100%;
+
+    @include mqm(phone) {
+      width: 50%;
+      float: left;
+    }
   }
 
   &__text {
@@ -77,6 +100,13 @@
       top: 1rem;
       right: 1.5rem;
       line-height: 1;
+
+      @include mqm(phone) {
+        background-color: $white;
+        padding: .5rem 1rem;
+        box-shadow: 0 0 2rem rgba($black, .2);
+        border-radius: 3px;
+      }
     }
 
     &:hover {

@@ -2,6 +2,11 @@
   background: $color-grey-light-1;
   padding: 25rem 0;
   margin-top: -20vh;
+
+  @include mqm(tabletP) {
+    padding: 20rem 0 10rem;
+    margin-top: -15vh;
+  }
 }
 
 .section-features {
@@ -11,22 +16,44 @@
   background-size: cover;
   clip-path: polygon(0 15vh, 30% 0, 100% 0, 100% 85%, 70% 100%, 0% 100%);
   margin-top: -20vh;
+
+  @include mqm(tabletP) {
+    padding: 10rem 0;
+    margin-top: 0;
+  }
+
+  @include mqm(phone) {
+    clip-path: none;
+  }
 }
 
 .section-tours {
   background: $color-grey-light-1;
   padding: 25rem 0 10rem 0;
   margin-top: -20vh;
+
+  @include mqm(tabletP) {
+    padding: 10rem 0;
+    margin-top: 0;
+  }
 }
 
 .section-stories {
   padding: 10rem 0;
   position: relative;
+
+  @include mqm(tabletP) {
+    padding: 10rem 0;
+  }
 }
 
 .section-booking {
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, rgba($color-primary-dark, 0.9), rgba($color-primary-light, 0.6));
+
+  @include mqm(tabletP) {
+    padding: 10rem 0;
+  }
 }
 
 .booking-wrapper {
@@ -35,10 +62,27 @@
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($black, .2);
-  height: 50rem;
+
+  @include mqm(tabletL) {
+    background-image: linear-gradient(105deg, rgba($white, .9) 0%, rgba($white, .9) 70%, transparent 70%),
+                      url('images/switzerland-2.jpg');
+  }
+
+  @include mqm(tabletP) {
+    background-image: linear-gradient(to right, rgba($white, .9) 0%, rgba($white, .9) 100%, transparent 100%),
+                      url('images/switzerland-2.jpg');
+  }
 }
 
 .booking-form {
   width: 50%;
   padding: 6rem;
+
+  @include mqm(tabletL) {
+    width: 70%;
+  }
+
+  @include mqm(tabletP) {
+    width: 100%;
+  }
 }

@@ -141,4 +141,56 @@
     font-size: 6rem;
     font-weight: 100;
   }
+
+  @include mqm(tabletP) {
+    height: auto;
+    border-radius: 3px;
+    background-color: $white;
+    box-shadow: 0 1rem 4rem rgba($black, 0.2);
+
+    &__side {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+
+      &--back {
+        transform: rotateY(0);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+
+        &-1 {
+          background-image: linear-gradient(to left top, $color-orange-dark, $color-orange-light);
+        }
+
+        &-2 {
+          background-image: linear-gradient(to left top, $color-green-dark, $color-green-light);
+        }
+
+        &-3 {
+          background-image: linear-gradient(to left top, $color-primary-dark, $color-primary-light);
+        }
+      }
+    }
+
+    &:hover &__side--front {
+      transform: rotateY(0);
+    }
+
+    &__cta {
+      position: relative;
+      width: 90%;
+      top: 0;
+      left: 0;
+      width: 100%;
+      transform: translate(0);
+      padding: 7rem 4rem 4rem 4rem;
+    }
+
+    &__price-box {
+      margin-bottom: 3rem;
+    }
+
+    &__price-value {
+      font-size: 6rem;
+    }
+  }
 }

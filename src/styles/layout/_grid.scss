@@ -2,8 +2,17 @@
   max-width: $grid-width;
   margin: 0 auto;
 
+  @include mqm(tabletP) {
+    max-width: 50rem;
+    padding: 0 3rem;
+  }
+
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
+
+    @include mqm(tabletP) {
+      margin-bottom: $gutter-vertical-small;
+    }
   }
 
   @include clearfix;
@@ -13,6 +22,15 @@
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+
+      @include mqm(tabletP) {
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
+      }
+    }
+
+    @include mqm(tabletP) {
+      width: 100% !important;
     }
   }
 
